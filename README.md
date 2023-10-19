@@ -1,4 +1,5 @@
 # Roblox-Server-Ip
+#EDUCATIONAL PURPOSES ONLY.!!!
 This Python code was made to automatically obtain the server IP address and port number when running roblox
 
 this will also automatically export the ips and ports to a text file
