@@ -3,13 +3,13 @@ import re
 from datetime import datetime
 import time
 
-#---------------------------
-#this code will automatically get the server ip if it is being ran
-#ips and ports will be printed, and exported to server_ips.txt
-#zeg on top fr
-#---------------------------
+#--------------------------------------------------------------------#
+# this code will automatically get the server ip if it is being ran #
+# ip with port will be printed, and exported to server_ips.txt 
+# serverhops will also be logged automatically 
+#--------------------------------------------------------------------#
 
-# set up console colors
+#console colors
 GREEN = '\033[92m'
 RED = '\033[91m'
 ENDC = '\033[0m'
@@ -51,7 +51,6 @@ while True:
             except Exception as e:
                 print(f"{RED}Error occurred while processing log file: {e}{ENDC}")
             previous_max_create_time = current_max_create_time
-        time.sleep(1)  # wait 1 second before checking for new log files
+        time.sleep(1) 
     except KeyboardInterrupt:
-        # exit program if user interrupts
         break
